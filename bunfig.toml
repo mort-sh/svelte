@@ -1,0 +1,4 @@
+# bunfig.toml  - https://bun.com/docs/runtime/bunfig
+
+[serve.static]
+plugins = ["bun-plugin-tailwind"]

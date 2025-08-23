@@ -1,38 +1,41 @@
-# sv
+# webbuddy (Svelte)
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Minimal docs
 
-## Creating a project
+## Prerequisites
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Node.js (LTS)
+- npm or pnpm
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Quick start
 
-# create a new project in my-app
-npx sv create my-app
-```
+1. Install dependencies
 
-## Developing
+   ```sh
+   npm install
+   ```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+2. Run development server
 
-```sh
-npm run dev
+   ```sh
+   npm run dev
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+3. Build for production
 
-## Building
+   ```sh
+   npm run build
+   npm run preview
+   ```
 
-To create a production version of your app:
+## Notes
 
-```sh
-npm run build
-```
+- Main stylesheet: `src/app.css` — it imports Tailwind and local styles.
+- Local style files: `src/styles/{theme.css, base.css, components.css, utilities.css}`
+- Vendor/style source path: `src/lib/vendor/**`
+- Tailwind/PostCSS should be configured in the project root (`postcss.config.cjs` / `tailwind.config.cjs` or `tailwind.config.js`).
 
-You can preview the production build with `npm run preview`.
+## Customize
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- Edit the files in `src/styles/` to change themes, base layout, components, or utilities.
+- If you add new CSS entry points, import them from `src/app.css` so the build pipeline processes them.

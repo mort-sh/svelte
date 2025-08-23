@@ -1,0 +1,15 @@
+/* Minimal docs:
+   - Entry stylesheet for the app. Imports Tailwind layers and local style modules.
+   - Edit local files in ./src/styles/ (theme.css, base.css, components.css, utilities.css).
+   - Tailwind is the primary utility framework; ensure PostCSS/Vite is configured to process this file.
+*/
+/* design tokens / CSS variables first */
+@import "./styles/theme.css";
+
+/* Tailwind v4 core */
+@import "tailwindcss";
+
+/* your extra layers/utilities (optional) */
+@import "./styles/base.css";
+@import "./styles/components.css";
+@import "./styles/utilities.css";

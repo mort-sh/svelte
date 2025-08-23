@@ -1,0 +1,12 @@
+/* EXAMPLE: Custom Theme Component Styles
+
+[data-theme='CustomTheme'] {
+	.my-btn {
+		background-color: #1ea1f1;
+		border-color: #1ea1f1;
+	}
+	.my-btn:hover {
+		background-color: #1c96e1;
+	}
+}
+*/
