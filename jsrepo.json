@@ -1,18 +1,21 @@
 {
 	"$schema": "https://unpkg.com/jsrepo@2.4.5/schemas/project-config.json",
 	"repos": [
-		"@ieedan/shadcn-svelte-extras"
+		"@ieedan/shadcn-svelte-extras",
+		"github/sikandarjodd/cnblocks"
 	],
 	"includeTests": false,
 	"includeDocs": true,
 	"watermark": true,
 	"formatter": "prettier",
 	"paths": {
-		"*": "./src/lib/vendor/shadcn-extra",
-		"components": "./src/lib/vendor/shadcn-extra/components",
-		"ui": "./src/lib/vendor/shadcn-extra/ui",
-		"hooks": "./src/lib/vendor/shadcn-extra/hooks",
-		"actions": "./src/lib/vendor/shadcn-extra/actions",
-		"utils": "./src/lib/vendor/shadcn-extra/utils"
+		"*": "./src/lib/vendor",
+		"components": "./src/lib/vendor/components",
+		"ui": "./src/lib/vendor/ui",
+		"hooks": "./src/lib/vendor/hooks",
+		"actions": "./src/lib/vendor/actions",
+		"mist": "./src/lib/vendor/components/mist",
+		"magic": "./src/lib/vendor/components/magic",
+		"utils": "./src/lib/vendor/utils"
 	}
 }

@@ -61,7 +61,8 @@ export default defineConfig({
 			$utils: path.resolve('./src/lib/utils'),
 			$vendor: path.resolve('./src/lib/vendor'),
 			$vendorShadcn: path.resolve('./src/lib/vendor/shadcn'),
-			$vendorShadcnExtra: path.resolve('./src/lib/vendor/shadcn-extra')
+			$mist: path.resolve('./src/lib/vendor/components/mist'),
+			$magic: path.resolve('./src/lib/vendor/components/magic')
 		}
 	}
 });
