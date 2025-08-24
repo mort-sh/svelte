@@ -20,21 +20,24 @@
 
 	/* Universal scrollbar styling */
 	::-webkit-scrollbar {
-		@apply w-2;
+		width: 0.5rem;
 	}
 	::-webkit-scrollbar-track {
-		@apply bg-muted rounded-full;
+		background-color: var(--muted);
+		border-radius: 9999px;
 	}
 	::-webkit-scrollbar-thumb {
-		@apply bg-secondary rounded-full;
+		background-color: var(--secondary);
+		border-radius: 9999px;
 	}
 	::-webkit-scrollbar-thumb:hover {
-		@apply bg-primary rounded-full;
+		background-color: var(--primary);
+		border-radius: 9999px;
 	}
 
 	/* Firefox support */
 	html {
 		/* scrollbar-width: thin; */
-		scrollbar-color: var(--color-muted) transparent;
+		scrollbar-color: var(--muted) transparent;
 	}
 }

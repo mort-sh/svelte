@@ -11,7 +11,7 @@ const plugins: PluginOption[] = [
 
 export default defineConfig({
 	plugins,
-	server: { port: 5173, host: true },
+	server: { port: {{cookiecutter.dev_port}}, host: true },
 	test: {
 		expect: { requireAssertions: true },
 		projects: [
