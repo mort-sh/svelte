@@ -1,0 +1,26 @@
+{
+  "project_name": "My Svelte App",
+  "project_slug": "{{cookiecutter.project_name|lower|replace(' ', '-')|replace('_', '-')}}",
+  "project_description": "A modern Svelte 5 application with TypeScript, Tailwind CSS, and Bun",
+  "author_name": "Your Name",
+  "author_email": "your.email@example.com",
+  "author_github_handle": "yourusername",
+  "dev_port": "5173",
+  "preview_port": "3000",
+  "include_docker": [
+    "y",
+    "n"
+  ],
+  "include_testing": [
+    "y",
+    "n"
+  ],
+  "open_source_license": [
+    "MIT license",
+    "BSD license",
+    "ISC license", 
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "Not open source"
+  ]
+}
